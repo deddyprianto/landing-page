@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+h4 {
+  color: #426696;
+  font-weight: 500;
+  opacity: 0.8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar__background {
+  background-color: #fff !important;
+  transition: 1s;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  box-shadow: 30px 40px 30px -35px rgba(0, 0, 0, 0.9);
+  background: white;
+  height: 80vh;
+  width: 85%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.glass::-webkit-scrollbar {
+  display: none;
+}
+
+.container__heading {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10em;
+}
+.quote {
+  font-family: "Dosis", sans-serif;
+  flex: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote h3 {
+  font-size: 4em;
+}
+.quote p {
+  font-size: 25px;
+}
+.row__button {
+  margin-top: 10px;
+}
+
+.tangan {
+  margin: -15px;
+}
+.tangan img {
+  width: 70px;
+}
+.button {
+  font-family: "Poppins", sans-serif;
+  width: 10em;
+  padding: 20px;
+  font: x-large;
+  background: linear-gradient(to right, #65dfc9, #6cdbeb);
+  border: none;
+  border-radius: 10px;
+  margin-top: 4em;
+  cursor: pointer;
+  outline: none;
+}
+.button2 {
+  font-family: "Poppins", sans-serif;
+  width: 10em;
+  padding: 20px;
+  font: x-large;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 4em;
+  cursor: pointer;
+}
+
+.image__heading {
+  width: 45%;
+}
+/* CIRCLE */
+.circle1 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: 5%;
+  right: 1%;
+}
+
+.circle3 {
+  bottom: 1%;
+  right: 30%;
+}
+.circle4 {
+  bottom: 41%;
+  right: 3%;
+}
+.circle3,
+.circle4 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle5,
+.circle6 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle5 {
+  bottom: 3%;
+  left: 4%;
+}
+.circle6 {
+  bottom: 8%;
+  right: 6%;
+}
+
+.circle10 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle10 {
+  top: 1%;
+  right: 40%;
+}
+.gambar__main {
+  display: flex;
+}
+.img2 {
+  width: 20em;
+  position: absolute;
+  z-index: -1;
+  bottom: 72%;
+  left: 17%;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+  .img-gantung {
+    display: none;
+  }
+  .img2 {
+    position: absolute;
+    bottom: 70%;
+    left: 15%;
+    width: 12em;
+  }
+  .container__heading {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8em;
+  }
+  .quote {
+    font-family: "Dosis", sans-serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote h3 {
+    margin-top: 2em;
+    font-size: 1.5em !important;
+    align-self: center;
+  }
+  .quote p {
+    font-size: 25px;
+  }
+  .row__button {
+    margin-top: 10px;
+  }
+  .button {
+    font-family: "Poppins", sans-serif;
+    width: 10em;
+    padding: 10px;
+    font-size: 15px;
+    background: linear-gradient(to right, #65dfc9, #6cdbeb);
+    border: none;
+    border-radius: 10px;
+    margin-top: 4em;
+    cursor: pointer;
+  }
+  .quote h3 {
+    font-size: 3em;
+  }
+  .button2 {
+    font-family: "Poppins", sans-serif;
+    width: 10em;
+    padding: 10px;
+    font-size: 12px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 4em;
+    cursor: pointer;
+    outline: none;
+  }
+  .container__heading .image__heading {
+    width: 20em;
+  }
+  .container__main {
+    margin-top: 17em;
+  }
+  .circle4 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+  .circle4 {
+    bottom: 41%;
+    right: 1%;
+  }
+  .circle2 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle2 {
+    top: 40%;
+    left: 1%;
+  }
+
+  .circle5 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle6 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle5 {
+    bottom: 2%;
+    left: 1%;
+  }
+  .circle6 {
+    bottom: 2%;
+    right: 1%;
+  }
+  .circle10 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+
+  .circle10 {
+    top: 4%;
+    right: 40%;
+  }
+}
+/* @media screen and(max-width: 1024px) {
+}
+@media screen and(max-width: 768px) {
+} */
+/* 576px 768px  992px 1200px 1400px */
+@media (min-width: 1200px) {
+  .container__main {
+    margin-top: 15em;
+  }
+  .img-gantung {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    width: 160px;
+  }
+  .img-duduk {
+    position: absolute;
+    left: 6%;
+    top: 0;
+    width: 95px;
+  }
+  .circle1 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle1 {
+    top: 1%;
+    left: 20%;
+  }
+  .circle4 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+  .circle4 {
+    top: 28.8%;
+    right: 0%;
+  }
+  .circle12 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle12 {
+    top: 30%;
+    left: 10%;
+  }
+  .circle2 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+
+  .circle2 {
+    top: 40%;
+    left: 1%;
+  }
+
+  .circle5 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 9rem;
+    width: 9rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle6 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle5 {
+    bottom: 2%;
+    left: 1%;
+  }
+  .circle6 {
+    bottom: 2%;
+    right: 1%;
+  }
+  .circle10 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+
+  .circle10 {
+    top: 4%;
+    right: 40%;
+  }
+  .glass {
+    width: 92%;
+  }
+  .quote {
+    font-family: "Dosis", sans-serif;
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote h3 {
+    font-size: 4em !important;
+  }
+  .quote p {
+    font-size: 25px;
+  }
+  .row__button {
+    margin-top: 10px;
+  }
+  .button {
+    font-family: "Poppins", sans-serif;
+    width: 10em;
+    padding: 10px;
+    font-size: 15px;
+    background: linear-gradient(to right, #65dfc9, #6cdbeb);
+    border: none;
+    border-radius: 10px;
+    margin-top: 4em;
+    cursor: pointer;
+  }
+  .quote h3 {
+    font-size: 3em;
+  }
+  .button2 {
+    font-family: "Poppins", sans-serif;
+    width: 10em;
+    padding: 10px;
+    font-size: 12px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 4em;
+    cursor: pointer;
+    outline: none;
+  }
+  .gambar__main {
+    display: flex;
+    justify-content: center;
+  }
+  .img1 {
+    width: 15em;
+  }
+  .img2 {
+    position: absolute;
+    bottom: 70%;
+    left: 25%;
+    width: 20em;
+  }
+  .text-me h3 {
+    font-size: 20px;
+  }
+  .text-me p {
+    font-size: 15px;
+  }
+}

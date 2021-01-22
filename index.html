@@ -3,84 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glass Website</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Landing Page Website</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main>
-      <section class="glass">
-        <div class="dashboard">
-          <div class="user">
-            <img src="./images/avatar.png" alt="" />
-            <h3>Simo Edwin</h3>
-            <p>Pro Member</p>
-          </div>
-          <div class="links">
-            <div class="link">
-              <img src="./images/twitch.png" alt="" />
-              <h2>Streams</h2>
-            </div>
-            <div class="link">
-              <img src="./images/steam.png" alt="" />
-              <h2>Games</h2>
-            </div>
-            <div class="link">
-              <img src="./images/upcoming.png" alt="" />
-              <h2>New</h2>
-            </div>
-            <div class="link">
-              <img src="./images/library.png" alt="" />
-              <h2>Library</h2>
-            </div>
-          </div>
-          <div class="pro">
-            <h2>Join pro for free games.</h2>
-            <img src="./images/controller.png" alt="" />
-          </div>
-        </div>
-        <div class="games">
-          <div class="status">
-            <h1>Active Games</h1>
-            <input type="text" />
-          </div>
-          <div class="cards">
-            <div class="card">
-              <img src="./images/assassins.png" alt="" />
-              <div class="card-info">
-                <h2>Assassins Creed Valhalla</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
+      <!--  Tujuan utamanya adalah mengajak pengunjung untuk membeli produk, mengisi formulir, atau mempelajari informasi yang diberikan. -->
+      <section class="glass" id="glasses">
+        <nav
+          id="navbartrig"
+          class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./img/buku.png" alt="" width="100" />DeyBook</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a href="#home" class="nav-link menu-item">Home</a>
+                <a href="" class="nav-link">About</a>
+                <a href="#service" class="nav-link menu-item">Service</a>
               </div>
-              <h2 class="percentage">60%</h2>
             </div>
-            <div class="card">
-              <img src="./images/sackboy.png" alt="" />
-              <div class="card-info">
-                <h2>Sackboy A Great Advanture</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
+          </div>
+        </nav>
+        <!-- main container -->
+        <div class="containe" id="home">
+          <div class="container__heading">
+            <div class="quote">
+              <h3>Read Book To</h3>
+              <p>Improve your Knowledge</p>
+              <div class="row__button">
+                <button class="button">
+                  <a
+                    href="#about"
+                    style="text-decoration: none"
+                    class="menu-item"
+                    >OverView</a
+                  >
+                </button>
+
+                <button class="button2">See Shelves</button>
               </div>
-              <h2 class="percentage">60%</h2>
+              <div class="tangan">
+                <img src="./img/flame-97.png" class="img-fluid" alt="" />
+              </div>
             </div>
-            <div class="card">
-              <img src="./images/spiderman.png" alt="" />
-              <div class="card-info">
-                <h2>Spiderman Miles Morales</h2>
-                <p>PS5 Version</p>
-                <div class="progress"></div>
+            <img
+              class="image__heading img-fluid mx-auto d-block"
+              src="./img/bg-book.png"
+              alt=""
+            />
+          </div>
+          <!-- subMain -->
+          <div class="container__main" id="about">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-7 col-sm-12">
+                  <div class="gambar__main">
+                    <img
+                      src="./img/reading-side.png"
+                      class="img-fluid img1"
+                      alt=""
+                    />
+                    <img
+                      src="./img/comment.png"
+                      class="img-fluid img2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 text-center text-me align-self-start">
+                  <h3 class="font-weight-bold">Write Less, Read More</h3>
+                  <p>
+                    by reading we will certainly get good and good knowledge,
+                    because books are windows of the world
+                  </p>
+                </div>
               </div>
-              <h2 class="percentage">60%</h2>
+            </div>
+          </div>
+
+          <!-- How To It Works -->
+          <div class="container" style="margin-top: 10em" id="service">
+            <h3 class="text-center">Service</h3>
+            <div class="row mt-5">
+              <div class="col-lg-4 col-sm-12">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Book Sources</h5>
+                    <img
+                      src="./img/icons8-book-reading-96.png"
+                      style="width: 100px"
+                      class="img-fluid rounded mx-auto d-block"
+                      alt=""
+                    />
+                    <p class="card-text text-center">
+                      the book given is original from the author's source
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Money Back Guarantine
+                    </h5>
+                    <img
+                      src="./img/Pig.png"
+                      style="width: 100px"
+                      class="img-fluid rounded mx-auto d-block"
+                      alt=""
+                    />
+                    <p class="card-text text-center">
+                      money back if the book is not written from the original
+                      source author
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Fixed Price</h5>
+                    <img
+                      src="./img/icons8-check-dollar-96.png"
+                      class="img-fluid rounded mx-auto d-block"
+                      alt=""
+                    />
+                    <p class="card-text text-center">
+                      book prices are fixed and never change
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <div class="circle1"></div>
-    <div class="circle2"></div>
+    <img src="./img/clip-12.png" class="img-gantung img-fluid" alt="" />
+    <img src="./img/clip-97.png" class="img-duduk img-fluid" alt="" />
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
+    <div class="circle6"></div>
+    <div class="circle10"></div>
+    <div class="circle12" id="circle"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/owl-carousel.js"></script>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
