@@ -25,17 +25,21 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <main>
-      <!--  Tujuan utamanya adalah mengajak pengunjung untuk membeli produk, mengisi formulir, atau mempelajari informasi yang diberikan. -->
+    <main id="wrapper">
       <section class="glass" id="glasses">
         <nav
           id="navbartrig"
           class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent"
         >
           <div class="container">
-            <a class="navbar-brand" href="#"
-              ><img src="./img/buku.png" alt="" width="100" />DeyBook</a
-            >
+            <a class="navbar-brand nav__a" style="font-size: 15px" href="#"
+              ><img
+                src="./img/proggram.png"
+                class="nav__image img-fluid"
+                alt=""
+                width="90"
+              />Coding Book
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -60,19 +64,26 @@
         <div class="containe" id="home">
           <div class="container__heading">
             <div class="quote">
-              <h3>Read Book To</h3>
-              <p>Improve your Knowledge</p>
+              <h3 class="text-center">Baca Buku Untuk</h3>
+              <p class="text-center">Meningkatkan SKILL Coding mu</p>
               <div class="row__button">
                 <button class="button">
                   <a
-                    href="#about"
+                    href="#overview"
                     style="text-decoration: none"
                     class="menu-item"
-                    >OverView</a
+                    >Overview</a
                   >
                 </button>
 
-                <button class="button2">See Shelves</button>
+                <button class="button2">
+                  <a
+                    href="#shelves"
+                    style="text-decoration: none"
+                    class="menu-item"
+                    >See Shelves</a
+                  >
+                </button>
               </div>
               <div class="tangan">
                 <img src="./img/flame-97.png" class="img-fluid" alt="" />
@@ -80,14 +91,14 @@
             </div>
             <img
               class="image__heading img-fluid mx-auto d-block"
-              src="./img/bg-book.png"
+              src="./img/my-bg.png"
               alt=""
             />
           </div>
           <!-- subMain -->
-          <div class="container__main" id="about">
+          <div class="container__main">
             <div class="container">
-              <div class="row align-items-center">
+              <div class="row">
                 <div class="col-lg-7 col-sm-12">
                   <div class="gambar__main">
                     <img
@@ -102,18 +113,65 @@
                     />
                   </div>
                 </div>
-                <div class="col-lg-5 col-sm-12 text-center text-me align-self-start">
-                  <h3 class="font-weight-bold">Write Less, Read More</h3>
-                  <p>
-                    by reading we will certainly get good and good knowledge,
-                    because books are windows of the world
+                <div class="col-lg-5 text-center text-me">
+                  <h3 class="font-weight-bold">
+                    Utamakan Membaca Sebelum Meng-Coding
+                  </h3>
+                  <p class="mt-3">
+                    Dengan membaca kita pastinya mendapatkan pengetahuan yg
+                    baik, karena semua code proggram ditulis dalam bentuk teks
+                    dan teks biasanya dalam bentuk buku yg sangat penting dibaca
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Our Us -->
+          <div class="our" id="overview">
+            <div class="container" style="margin-top: 10em">
+              <h3 class="text-center">Overview</h3>
+              <div class="row">
+                <div class="col-lg-4 over align-self-center">
+                  <div class="kolom__text mt-3">
+                    <h3 class="text-center" style="font-size: 20px !important">
+                      Anda Harus Tau!
+                    </h3>
+                    <p class="text-center" style="font-size: 15px !important">
+                      Kamu proggrammer tapi malas baca buku, kamu bukan lah
+                      proggrammer yg baik. proggrammer yg baik harus mampu dan
+                      tahan membaca buku & dokumentasi.
+                    </p>
+                    <div class="btn">
+                      <button class="button">
+                        <a
+                          href="#detail"
+                          style="text-decoration: none"
+                          class="menu-item"
+                          >Lihat Detail</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="view__gambar">
+                    <img
+                      src="./img/pixeltrue-web-development-1.png"
+                      alt=""
+                      class="img-fluid img__overview1"
+                    />
+                    <img
+                      src="./img/pixeltrue-study-from-books-1.png"
+                      alt=""
+                      class="img-fluid img__overview2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <!-- How To It Works -->
+          <!-- Service-->
           <div class="container" style="margin-top: 10em" id="service">
             <h3 class="text-center">Service</h3>
             <div class="row mt-5">
@@ -169,21 +227,485 @@
               </div>
             </div>
           </div>
+          <!-- Detail -->
+          <div class="bg-linear">
+            <div class="container" style="margin-top: 10em" id="detail">
+              <div class="row">
+                <div class="col-lg-3 column__bulat align-self-center">
+                  <h3 class="text-center">Detail</h3>
+                  <p class="text-center tulisan__detail">
+                    Code Proggram adalah sebuah teks dan teks umum nya harus lah
+                    dibaca, mulailah hari ini dengan membaca karena kita tidak
+                    cukup hanya praktek, kita juga butuh teori dasar dari bahasa
+                    pemrograman yg kita pakai. jadi biasakan lah membaca
+                  </p>
+                </div>
+                <div class="col-lg-9">
+                  <img src="./img/pablita-596.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Shelves -->
+          <div class="container" id="shelves" style="margin-top: 10em">
+            <h3 class="text-center mb-5">Rak Buku</h3>
+            <p class="text-center">Buku Pemrograman Python</p>
+            <div class="row thumb">
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Implementasi Algoritma dalam bahasa Python
+                    </h3>
+                    <a href="img/IMG20210124160338.jpg">
+                      <img
+                        src="./img/buku/IMG20210124160338.jpg"
+                        class="img-fluid rounded mx-auto d-block gamba"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Perkuat Algoritma mu dengan Belajar fundamental Python,
+                      Algoritma dan strukture data. dilengkapi dengan studi
+                      kasus dan beberapa source code bahasa Pemrograman Python
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Dasar Pemrograman dengan Python
+                    </h3>
+                    <a href="img/IMG20210124153342.jpg">
+                      <img
+                        src="./img/buku/IMG20210124153342.jpg"
+                        class="img-fluid rounded mx-auto d-block gamba"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Kamu baru kenal bahasa pemrograman Python? atau kamu baru
+                      ingin memulai dengan menggunakan bahasa Python? selamat
+                      kamu orang yg beruntung datang pada page ini. Buku
+                      Pemrograman Python karya Abdul Karir, berisi materi,teori
+                      dasar & Algoritma bahasa pemrograman Python dan source
+                      code proggram serta studi kasus
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 style="font-size: 15px" class="card-title text-center">
+                      Buku Tips & Trik Program database menggunakan Python
+                    </h3>
+                    <a href="img/IMG20210124160625.jpg">
+                      <img
+                        src="./img/buku/IMG20210124160625.jpg"
+                        class="img-fluid rounded mx-auto d-block gamba"
+                        alt=""
+                      />
+                    </a>
+
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Kamu sudah biasa dengan Python dan mau lebih update lagi,
+                      Python sekarang lebih dipakai dalam kasus data/bigdata.
+                      buku ini cocok menemani kamu dalam mempelajari big data
+                      menggunakan Python dilengkapi dengan teori fundamental &
+                      studi kasus
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5">Buku Pemrograman PHP</p>
+            <div class="row thumb">
+              <div class="col-lg-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 20px">
+                      Buku Koleksi Pemrograman WEB dengan PHP
+                    </h3>
+                    <a href="img/IMG20210124153703.jpg">
+                      <img src="./img/buku/IMG20210124153703.jpg"
+                      class="img-fluid rounded mx-auto d-block gamba alt="" />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 15px"
+                    >
+                      Buku koleksi Pemrograman PHP memberikan source code free
+                      untuk pembaca source code untuk membuat aplikasi berbasis
+                      WEB untuk pemula dilengkapi dengan teori dan penemu bahasa
+                      pemrograman PHP tahun rilis PHP dan asal usul bahasa PHP
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 20px">
+                      Buku Pemrograman WEB dengan PHP VERSI 7
+                    </h3>
+                    <a href="img/IMG20210124214541.jpg">
+                      <img
+                        src="./img/buku/IMG20210124214541.jpg"
+                        class="img-fluid rounded gamba mx-auto d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 15px"
+                    >
+                      Anda sering buat aplikasi web dengan php? cobain nih Buku
+                      Pemrograman PHP7,buku ini memberikan fasilitas yg banyak
+                      mulai dari Memasang PHP di server web windows hingga
+                      konfigurasi ke database modern MongoDB,PostgreSQL dengan
+                      PHP
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5">Buku Pemrograman JAVA</p>
+            <div class="row thumb">
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Logika Pemrograman menggunakan JAVA
+                    </h3>
+                    <a href="img/IMG20210124161056.jpg">
+                      <img
+                        src="./img/buku/IMG20210124161056.jpg"
+                        class="img-fluid rounded mx-auto gamba d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 15px"
+                    >
+                      Buku Pemrograman dengan JAVA memberikan teori,Logika dan
+                      dasar pemrograman JAVA dan praktek langsung menggunakan
+                      source code Bahasa pemrograman JAVA
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku JAVA Untuk Kriptografy
+                    </h3>
+                    <a href="img/IMG20210124160240.jpg">
+                      <img
+                        src="./img/buku/IMG20210124160240.jpg"
+                        class="img-fluid rounded mx-auto d-block gamba"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 15px"
+                    >
+                      ingin menambahkan keamanan dalam aplikasi yg kamu bangun?
+                      dan bingung gimana cara menambahkam keamaan aplikasi?
+                      solusinya ada di buku ini, Buku JAVA Kriptografy
+                      memberikan pengetahuan tentang cara mengamankan data
+                      menggunakan Kriptografi dan Java Mengamankan Data Dari
+                      Penyadapan
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Algoritma menggunakan JAVA
+                    </h3>
+                    <a href="/img/IMG20210124160709.jpg">
+                      <img src="./img/buku/IMG20210124160709.jpg"
+                      class="img-fluid rounded mx-auto d-block gamba alt="" />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 15px"
+                    >
+                      ngoding dan buat app menggunakan JAVA tapi belom tau
+                      Algoritma dan strukture data ? tenang Buku Algoritma &
+                      Pemrograman JAVA memberikan teori dasar dan studi kasus
+                      pemrograman JAVA
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5">Buku Pemrograman Lain-lain</p>
+            <div class="row thumb">
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Dasar HTML,CSS & JavaScript
+                    </h3>
+                    <a href="img/IMG20210124160417.jpg">
+                      <img
+                        src="./img/buku/IMG20210124160417.jpg"
+                        class="img-fluid gamba rounded mx-auto d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Kamu lagi design web menggunakan HTML,CSS dan bantuan
+                      JavaScript untuk membuat web mu jadi interaktif? buku ini
+                      pantas kamu jadikan teman mu karena buku ini menyajikan
+                      teori fundamental html,css & JavaScript serta source code
+                      yg bisa kamu contek
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Algoritma Pemrograman & Strukture data menggunakan
+                      C++
+                    </h3>
+                    <a href="img/IMG20210124161321.jpg">
+                      <img
+                        src="./img/buku/IMG20210124161321.jpg"
+                        class="img-fluid rounded mx-auto gamba d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 12px"
+                    >
+                      Anda proggrammer C++, kami menyarankan anda memiliki buku
+                      ini karena didalam buku ini terdapat teori dasar
+                      fundamental,source code dan contoh studi kasus
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Algoritma & Pemrograman menggunakan Pascal dan C
+                    </h3>
+                    <a href="img/IMG20210124214554.jpg">
+                      <img
+                        src="./img/buku/IMG20210124214554.jpg"
+                        class="img-fluid gamba rounded mx-auto d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Anda proggrammer tapi masih kendala di fundamental?
+                      jadikan buku ini teman ngoding mu dengan bahasa
+                      pemrograman C dan pascal dilengkapi dengan
+                      teori,fundamental bahasa c dan pascal serta studi kasus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5">
+              Buku Pemrograman Machine Learning Dengan Python
+            </p>
+            <div class="row thumb">
+              <div class="col-lg-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku pengenalan Machine Learning dengan Python
+                    </h3>
+                    <a href="img/IMG20210124154048.jpg">
+                      <img
+                        src="./img/buku/IMG20210124154048.jpg"
+                        class="img-fluid rounded mx-auto d-block gamba"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/rating.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      anda baru belajar machine Learning? atau sudah pernah
+                      membuat project machine Learning, kami sangat menyarankan
+                      untuk anda memiliki buku ini karena buku ini dilengkapi
+                      dengan dasar dan pengenalan machine Learning menggunakan
+                      Python
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-center" style="font-size: 15px">
+                      Buku Pengantar Machine Learning menggunakan Python & Rust
+                    </h3>
+                    <a href="img/IMG20210124153914.jpg">
+                      <img
+                        src="./img/buku/IMG20210124153914.jpg"
+                        class="img-fluid rounded mx-auto gamba d-block"
+                        alt=""
+                      />
+                    </a>
+                    <div class="star mt-4">
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                      <img src="./img/star.png" alt="" width="30" />
+                    </div>
+                    <p
+                      class="card-text text-center mt-2"
+                      style="font-size: 13px"
+                    >
+                      Machine Learning merupakan bagian dari artificial
+                      inteligence/AI, buku ini menyajikan beberapa teori dan
+                      pengantar penting untuk belajar machine Learning dengan
+                      bahasa pemrograman Rust dan Python
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
     <div class="circle1"></div>
     <img src="./img/clip-12.png" class="img-gantung img-fluid" alt="" />
-    <img src="./img/clip-97.png" class="img-duduk img-fluid" alt="" />
+    <img
+      src="./img/clip-distance-education.png"
+      class="img-duduk img-fluid"
+      alt=""
+    />
+    <img src="./img/clip-139.png" alt="" class="img-fluid gambar__bawah" />
     <div class="circle3"></div>
     <div class="circle4"></div>
     <div class="circle5"></div>
     <div class="circle6"></div>
     <div class="circle10"></div>
     <div class="circle12" id="circle"></div>
+    <div class="fade"></div>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
       crossorigin="anonymous"
     ></script>
     <script
@@ -191,7 +713,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/jquery.poptrox.min.js"></script>
     <script src="./js/owl-carousel.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/main.js"></script>

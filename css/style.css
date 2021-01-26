@@ -21,6 +21,7 @@ h3 {
   font-weight: 600;
   opacity: 0.8;
 }
+
 h4 {
   color: #426696;
   font-weight: 500;
@@ -102,12 +103,15 @@ main {
   cursor: pointer;
   outline: none;
 }
+
 .button2 {
+  outline: none;
+  border: none;
   font-family: "Poppins", sans-serif;
   width: 10em;
   padding: 20px;
   font: x-large;
-  background-color: transparent;
+  background: linear-gradient(to right, #65dfc9, #6cdbeb);
   border-radius: 10px;
   margin-top: 4em;
   cursor: pointer;
@@ -156,7 +160,6 @@ main {
   border-radius: 50%;
 }
 
-.circle5,
 .circle6 {
   background: white;
   background: linear-gradient(
@@ -170,10 +173,6 @@ main {
   border-radius: 50%;
 }
 
-.circle5 {
-  bottom: 3%;
-  left: 4%;
-}
 .circle6 {
   bottom: 8%;
   right: 6%;
@@ -206,11 +205,104 @@ main {
   bottom: 72%;
   left: 17%;
 }
+.poptrox-popup {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
 
+.poptrox-popup .closer {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 2;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  white-space: nowrap;
+  text-indent: 2.5em;
+  overflow: hidden;
+  width: 2.5em;
+  height: 2.5em;
+  display: block;
+}
+
+.poptrox-popup .closer:before {
+  content: "X";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.poptrox-popup .closer:before {
+  display: block;
+  position: relative;
+  text-indent: 0;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  color: #ffffff !important;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+.poptrox-popup:hover .closer {
+  opacity: 0.5;
+}
+
+.poptrox-popup:hover .closer:hover {
+  opacity: 1;
+}
+.gamba {
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.gamba:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #ff6382;
+}
+body.is-covered #wrapper {
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
 /* responsive */
 @media (max-width: 576px) {
+  .gambar__bawah {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: 120px;
+  }
+  .nav__image {
+    width: 50px;
+  }
+  .nav__a {
+    font-size: 15px;
+  }
   .img-gantung {
     display: none;
+  }
+  .img-duduk {
+    position: absolute;
+    top: -6%;
+    width: 125px;
+    left: 10%;
   }
   .img2 {
     position: absolute;
@@ -273,6 +365,9 @@ main {
   .container__main {
     margin-top: 17em;
   }
+  .circle3 {
+    display: none;
+  }
   .circle4 {
     background: white;
     background: linear-gradient(
@@ -314,8 +409,8 @@ main {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     );
-    height: 4rem;
-    width: 4rem;
+    height: 1.5rem;
+    width: 1.5rem;
     position: absolute;
     border-radius: 50%;
   }
@@ -333,29 +428,15 @@ main {
   }
 
   .circle5 {
-    bottom: 2%;
-    left: 1%;
+    bottom: 50%;
+    left: 0.5%;
   }
   .circle6 {
     bottom: 2%;
     right: 1%;
   }
   .circle10 {
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
-    height: 4rem;
-    width: 4rem;
-    position: absolute;
-    border-radius: 20%;
-  }
-
-  .circle10 {
-    top: 4%;
-    right: 40%;
+    display: none;
   }
 }
 /* @media screen and(max-width: 1024px) {
@@ -364,6 +445,66 @@ main {
 } */
 /* 576px 768px  992px 1200px 1400px */
 @media (min-width: 1200px) {
+  .column__bulat {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding: 25px;
+  }
+  .bg-linear {
+    background-color: #6adce0;
+    opacity: 0.8;
+  }
+  .star {
+    text-align: center;
+  }
+  .img__overview1 {
+    width: 600px;
+  }
+  .img__overview2 {
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .kolom__text {
+    margin-left: 5em;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .btn button {
+    width: 50%;
+    margin-top: -10px;
+    font-size: 12px;
+  }
+  .view__gambar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .our {
+    background-image: url(/img/partikel.png);
+    background-size: cover;
+    background-position-x: 707px;
+    background-position-y: 46px;
+    /* background-color: #303542; */
+  }
+
+  .gambar__bawah {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   .container__main {
     margin-top: 15em;
   }
@@ -375,9 +516,9 @@ main {
   }
   .img-duduk {
     position: absolute;
-    left: 6%;
-    top: 0;
-    width: 95px;
+    left: 4%;
+    top: -5.1%;
+    width: 140px;
   }
   .circle1 {
     background: white;
@@ -445,18 +586,6 @@ main {
     left: 1%;
   }
 
-  .circle5 {
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
-    height: 9rem;
-    width: 9rem;
-    position: absolute;
-    border-radius: 50%;
-  }
   .circle6 {
     background: white;
     background: linear-gradient(
@@ -464,16 +593,12 @@ main {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     );
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     position: absolute;
     border-radius: 50%;
   }
 
-  .circle5 {
-    bottom: 2%;
-    left: 1%;
-  }
   .circle6 {
     bottom: 2%;
     right: 1%;
@@ -495,6 +620,20 @@ main {
     top: 4%;
     right: 40%;
   }
+  .circle5 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    border-radius: 20%;
+    bottom: 30%;
+    left: 0.5%;
+  }
   .glass {
     width: 92%;
   }
@@ -507,10 +646,10 @@ main {
     align-items: center;
   }
   .quote h3 {
-    font-size: 4em !important;
+    font-size: 2.5em !important;
   }
   .quote p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .row__button {
     margin-top: 10px;
@@ -553,10 +692,87 @@ main {
     left: 25%;
     width: 20em;
   }
+  .text-me {
+    background-image: url(/img/urban-disco-ball-background.png);
+    background-position-y: 8px;
+  }
   .text-me h3 {
     font-size: 20px;
   }
   .text-me p {
     font-size: 15px;
+  }
+  .over {
+    font-family: "Dosis", sans-serif;
+  }
+  .over h3 {
+    font-size: 2em !important;
+  }
+  .over p {
+    font-size: 20px;
+  }
+
+  .tulisan__detail {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1600px) {
+  .our {
+    background-image: url(/img/partikel.png);
+    background-size: cover;
+    background-position-x: 203px;
+    background-position-y: -26px;
+  }
+  .kolom__text {
+    margin-top: -5em;
+    margin-left: 22px;
+  }
+  .gambar__bawah {
+    width: 230px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .img-gantung {
+    position: absolute;
+    right: 0.6%;
+    top: 3.6%;
+    width: 160px;
+  }
+  .img-duduk {
+    position: absolute;
+    left: 4%;
+    top: -4.5%;
+    width: 170px;
+  }
+  .circle4 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 20%;
+  }
+  .circle4 {
+    top: 24.9%;
+    right: 0.7%;
+  }
+  .circle5 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 40%;
+    left: 0.5%;
   }
 }
