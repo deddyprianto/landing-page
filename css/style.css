@@ -91,6 +91,15 @@ main {
 .tangan img {
   width: 70px;
 }
+.tangan_kedua {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  margin-left: 50px;
+}
+.tangan_kedua img {
+  width: 70px;
+}
 .button {
   font-family: "Poppins", sans-serif;
   width: 10em;
@@ -121,32 +130,11 @@ main {
   width: 45%;
 }
 /* CIRCLE */
-.circle1 {
-  background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
-  height: 5rem;
-  width: 5rem;
-  position: absolute;
-  border-radius: 50%;
-}
-.circle1 {
-  top: 5%;
-  right: 1%;
-}
-
-.circle3 {
-  bottom: 1%;
-  right: 30%;
-}
 .circle4 {
   bottom: 41%;
   right: 3%;
 }
-.circle3,
+
 .circle4 {
   background: white;
   background: linear-gradient(
@@ -281,8 +269,32 @@ body.is-covered #wrapper {
     #111
   );
 }
+
+.img-gantung {
+  position: absolute;
+  right: 0.6%;
+  top: 0;
+  width: 160px;
+}
 /* responsive */
 @media (max-width: 576px) {
+  .image__komen {
+    width: 300px;
+    position: absolute;
+    bottom: 55%;
+    left: -18%;
+    opacity: 0.8;
+  }
+  .image__komen1 {
+    display: none;
+  }
+  .image__komen2 {
+    width: 150px;
+    position: absolute;
+    bottom: -38%;
+    right: 19%;
+    opacity: 0.7;
+  }
   .gambar__bawah {
     position: absolute;
     bottom: 0;
@@ -365,9 +377,6 @@ body.is-covered #wrapper {
   .container__main {
     margin-top: 17em;
   }
-  .circle3 {
-    display: none;
-  }
   .circle4 {
     background: white;
     background: linear-gradient(
@@ -375,8 +384,8 @@ body.is-covered #wrapper {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     );
-    height: 5rem;
-    width: 5rem;
+    height: 1rem;
+    width: 1rem;
     position: absolute;
     border-radius: 20%;
   }
@@ -439,26 +448,48 @@ body.is-covered #wrapper {
     display: none;
   }
 }
+
 /* @media screen and(max-width: 1024px) {
 }
 @media screen and(max-width: 768px) {
 } */
 /* 576px 768px  992px 1200px 1400px */
 @media (min-width: 1200px) {
-  .column__bulat {
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    padding: 25px;
+  .layanan__pertama .card .card-body h5 {
+    font-size: 17px;
+  }
+  .layanan__pertama .card .card-body p {
+    font-size: 15px;
+  }
+  .gambar__info {
+    width: 500px;
+  }
+  .gambar__awal {
+    width: 500px;
+  }
+  .image__komen2 {
+    width: 250px;
+    position: absolute;
+    bottom: -39px;
+    left: 37%;
+  }
+  .img__brain {
+    width: 90%;
+  }
+  .image__komen {
+    position: absolute;
+    top: -10%;
+    left: -7%;
+    width: 400px;
+  }
+  .image__komen1 {
+    position: absolute;
+    top: -3%;
+    right: -5%;
+    width: 400px;
   }
   .bg-linear {
-    background-color: #6adce0;
+    background-image: url(/img/yaa.png);
     opacity: 0.8;
   }
   .star {
@@ -479,28 +510,25 @@ body.is-covered #wrapper {
   .btn {
     width: 100%;
     display: flex;
-    justify-content: center;
   }
   .btn button {
-    width: 50%;
-    margin-top: -10px;
+    width: 100%;
+    margin-top: 10px;
     font-size: 12px;
   }
   .view__gambar {
     display: flex;
     flex-wrap: wrap;
   }
-
   .our {
-    background-image: url(/img/partikel.png);
+    background-image: url(/img/pari.png);
     background-size: cover;
-    background-position-x: 707px;
-    background-position-y: 46px;
-    /* background-color: #303542; */
+    background-position-x: 100px;
+    background-position-y: 15px;
   }
 
   .gambar__bawah {
-    width: 180px;
+    width: 150px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -511,31 +539,16 @@ body.is-covered #wrapper {
   .img-gantung {
     position: absolute;
     right: 0;
-    top: 2%;
+    top: 1%;
     width: 160px;
   }
   .img-duduk {
     position: absolute;
     left: 4%;
-    top: -5.1%;
-    width: 140px;
+    top: -5%;
+    width: 120px;
   }
-  .circle1 {
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.3)
-    );
-    height: 4rem;
-    width: 4rem;
-    position: absolute;
-    border-radius: 50%;
-  }
-  .circle1 {
-    top: 1%;
-    left: 20%;
-  }
+
   .circle4 {
     background: white;
     background: linear-gradient(
@@ -543,15 +556,14 @@ body.is-covered #wrapper {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     );
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2rem;
+    width: 2rem;
     position: absolute;
     border-radius: 20%;
+    top: 32%;
+    right: 0.5%;
   }
-  .circle4 {
-    top: 28.8%;
-    right: 0%;
-  }
+
   .circle12 {
     background: white;
     background: linear-gradient(
@@ -593,8 +605,8 @@ body.is-covered #wrapper {
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.3)
     );
-    height: 5rem;
-    width: 5rem;
+    height: 8rem;
+    width: 8rem;
     position: absolute;
     border-radius: 50%;
   }
@@ -692,10 +704,6 @@ body.is-covered #wrapper {
     left: 25%;
     width: 20em;
   }
-  .text-me {
-    background-image: url(/img/urban-disco-ball-background.png);
-    background-position-y: 8px;
-  }
   .text-me h3 {
     font-size: 20px;
   }
@@ -715,13 +723,66 @@ body.is-covered #wrapper {
   .tulisan__detail {
     font-size: 13px;
   }
+  .gambar__rakBuku {
+    width: 650px;
+  }
+  .gambar__komen {
+    width: 700px;
+  }
+  .nav__tulis a {
+    font-size: 15px;
+  }
+  .gambar__cuitan {
+    width: 200px;
+  }
 }
 @media (min-width: 1600px) {
+  .layanan__pertama .card .card-body h5 {
+    font-size: 25px;
+  }
+  .layanan__pertama .card .card-body p {
+    font-size: 20px;
+  }
+  .gambar__komen {
+    width: 900px;
+  }
+  .gambar__info {
+    width: 700px;
+  }
+  .gambar__awal {
+    width: 800px;
+  }
+  .gambar__rakBuku {
+    width: 700px;
+  }
+  .bg-linear {
+    background-image: url(/img/yaa.png);
+    opacity: 0.8;
+    background-position-y: 433px;
+    background-position-x: 326px;
+  }
+
+  .circle12 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle12 {
+    top: 30%;
+    left: 15%;
+  }
   .our {
-    background-image: url(/img/partikel.png);
+    background-image: url(/img/pari.png);
     background-size: cover;
-    background-position-x: 203px;
-    background-position-y: -26px;
+    background-position-x: 100px;
+    background-position-y: 15px;
   }
   .kolom__text {
     margin-top: -5em;

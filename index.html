@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Website</title>
+    <title>Mari baca Buku</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
@@ -22,9 +22,16 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/loader/loaders.css">
   </head>
   <body>
+    <div class="css-loader">
+      <div
+        class="loader-inner line-scale d-flex align-items-center justify-content-center"
+      ></div>
+    </div>
     <main id="wrapper">
       <section class="glass" id="glasses">
         <nav
@@ -37,7 +44,7 @@
                 src="./img/proggram.png"
                 class="nav__image img-fluid"
                 alt=""
-                width="90"
+                width="50"
               />Coding Book
             </a>
             <button
@@ -52,10 +59,12 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                <a href="#home" class="nav-link menu-item">Home</a>
-                <a href="" class="nav-link">About</a>
-                <a href="#service" class="nav-link menu-item">Service</a>
+              <div class="navbar-nav ml-auto nav__tulis">
+                <a href="#home" class="nav-link menu-item">Beranda</a>
+                <a href="#info"  class="nav-link menu-item">Informasi</a>
+                <a href="#service" class="nav-link menu-item">Layanan</a>
+                <a href="#shelves" class="nav-link menu-item">Rak</a>
+                <a href="#contact" class="nav-link menu-item">Contact</a>
               </div>
             </div>
           </div>
@@ -64,10 +73,12 @@
         <div class="containe" id="home">
           <div class="container__heading">
             <div class="quote">
-              <h3 class="text-center">Baca Buku Untuk</h3>
-              <p class="text-center">Meningkatkan SKILL Coding mu</p>
+              <h3 class="text-center" data-aos="fade-up"
+              data-aos-delay="600"
+              >Baca Buku Untuk</h3>
+              <p class="text-center" data-aos="fade-right" data-aos-delay="700" >Meningkatkan SKILL Coding mu</p>
               <div class="row__button">
-                <button class="button">
+                <button class="button shadow" data-aos="zoom-in" data-aos-delay="800">
                   <a
                     href="#overview"
                     style="text-decoration: none"
@@ -75,61 +86,59 @@
                     >Overview</a
                   >
                 </button>
-
-                <button class="button2">
+                <button class="button2 shadow-sm"  data-aos="zoom-out" data-aos-delay="800">
                   <a
-                    href="#shelves"
+                    href="#info"
                     style="text-decoration: none"
                     class="menu-item"
-                    >See Shelves</a
+                    >Info Detail</a
                   >
                 </button>
               </div>
-              <div class="tangan">
-                <img src="./img/flame-97.png" class="img-fluid" alt="" />
+              <div class="tangan" data-aos="zoom-out-up"data-aos-delay="800" data-aos-duration="1000">
+                <img src="./img/flame-97.png" class="img-fluid"  alt="" />
               </div>
             </div>
             <img
-              class="image__heading img-fluid mx-auto d-block"
-              src="./img/my-bg.png"
+            data-aos="zoom-out" data-aos-delay="900"
+              class="image__heading img-fluid mx-auto d-block gambar__awal"
+              src="./img/my-bgg.png"
               alt=""
             />
           </div>
-          <!-- subMain -->
-          <div class="container__main">
-            <div class="container">
+
+          <!-- Informasi -->
+          <div class="container__main" >
+            <div class="container"id="info">
+              <h3 class="text-center mb-5">Informasi menarik</h3>
               <div class="row">
-                <div class="col-lg-7 col-sm-12">
+                <div class="col-lg-8 ">
                   <div class="gambar__main">
                     <img
-                      src="./img/reading-side.png"
-                      class="img-fluid img1"
-                      alt=""
-                    />
-                    <img
-                      src="./img/comment.png"
-                      class="img-fluid img2"
+                      src="./img/pixeltrue-special-deals-1.png"
+                      class="img-fluid gambar__info"
                       alt=""
                     />
                   </div>
                 </div>
-                <div class="col-lg-5 text-center text-me">
-                  <h3 class="font-weight-bold">
-                    Utamakan Membaca Sebelum Meng-Coding
-                  </h3>
+                <div class="col-lg-4 text-center text-me align-self-center">
+                  <h3 class="font-weight-bold">Info Nih !</h3>
                   <p class="mt-3">
-                    Dengan membaca kita pastinya mendapatkan pengetahuan yg
-                    baik, karena semua code proggram ditulis dalam bentuk teks
-                    dan teks biasanya dalam bentuk buku yg sangat penting dibaca
+                    Website ini menawarkan beberapa buku buku fundamental coding
+                    untuk dibaca sebelum membuat code proggram. <br> SEPERTI APA ???
+                    <br />
+                    <br />
+                    yuk scrooll kebawah
                   </p>
+                  <img src="./img/scribbles-scribbles-88.png" class="img-fluid" width="100" alt="">
                 </div>
               </div>
             </div>
           </div>
           <!-- Our Us -->
           <div class="our" id="overview">
-            <div class="container" style="margin-top: 10em">
-              <h3 class="text-center">Overview</h3>
+            <div class="container" style="margin-top: 15em">
+              <h3 class="text-center">Sudah Tau Belum ???</h3>
               <div class="row">
                 <div class="col-lg-4 over align-self-center">
                   <div class="kolom__text mt-3">
@@ -141,16 +150,21 @@
                       proggrammer yg baik. proggrammer yg baik harus mampu dan
                       tahan membaca buku & dokumentasi.
                     </p>
-                    <div class="btn">
-                      <button class="button">
-                        <a
-                          href="#detail"
-                          style="text-decoration: none"
-                          class="menu-item"
-                          >Lihat Detail</a
-                        >
-                      </button>
-                    </div>
+                 
+                      <div class="btn">
+                        <button class="button shadow">
+                          <a
+                            href="#detail"
+                            style="text-decoration: none"
+                            class="menu-item"
+                            >Lihat beberapa komentar</a
+                          >
+                        </button>
+                      </div>  
+                      <div class="tangan_kedua">
+                        <img src="./img/flame-97.png" class="img-fluid" alt="" />
+                      </div>
+             
                   </div>
                 </div>
                 <div class="col-lg-8">
@@ -172,13 +186,13 @@
           </div>
 
           <!-- Service-->
-          <div class="container" style="margin-top: 10em" id="service">
-            <h3 class="text-center">Service</h3>
+          <div class="container" style="margin-top: 15em" id="service">
+            <h3 class="text-center">Layanan Kami</h3>
             <div class="row mt-5">
-              <div class="col-lg-4 col-sm-12">
-                <div class="card bg-transparent">
+              <div class="col-lg-4 col-sm-12 layanan__pertama">
+                <div class="card bg-transparent shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Book Sources</h5>
+                    <h5 class="card-title text-center">Sumber Buku</h5>
                     <img
                       src="./img/icons8-book-reading-96.png"
                       style="width: 100px"
@@ -186,16 +200,16 @@
                       alt=""
                     />
                     <p class="card-text text-center">
-                      the book given is original from the author's source
+                      Buku yg kami berikan adalah buku asli dari penulis, tidak hasil copy paste atau ambil dari karangan buku lain
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12">
-                <div class="card bg-transparent">
+              <div class="col-lg-4 col-sm-12 layanan__pertama">
+                <div class="card bg-transparent shadow-sm">
                   <div class="card-body">
                     <h5 class="card-title text-center">
-                      Money Back Guarantine
+                      Uang Anda Kembali
                     </h5>
                     <img
                       src="./img/Pig.png"
@@ -204,55 +218,54 @@
                       alt=""
                     />
                     <p class="card-text text-center">
-                      money back if the book is not written from the original
-                      source author
+                      Uang anda kembali jika buku tidak ditulis dari penulis/pengarang asal
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12">
-                <div class="card bg-transparent">
+              <div class="col-lg-4 col-sm-12 layanan__pertama">
+                <div class="card bg-transparent shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Fixed Price</h5>
+                    <h5 class="card-title text-center">Harga Tetap</h5>
                     <img
                       src="./img/icons8-check-dollar-96.png"
                       class="img-fluid rounded mx-auto d-block"
                       alt=""
                     />
                     <p class="card-text text-center">
-                      book prices are fixed and never change
+                      harga buku tetap dan tidak pernah berubah, jadi kapan pun harga buku dijamin tidak berubah
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Detail -->
-          <div class="bg-linear">
-            <div class="container" style="margin-top: 10em" id="detail">
-              <div class="row">
-                <div class="col-lg-3 column__bulat align-self-center">
-                  <h3 class="text-center">Detail</h3>
-                  <p class="text-center tulisan__detail">
-                    Code Proggram adalah sebuah teks dan teks umum nya harus lah
-                    dibaca, mulailah hari ini dengan membaca karena kita tidak
-                    cukup hanya praktek, kita juga butuh teori dasar dari bahasa
-                    pemrograman yg kita pakai. jadi biasakan lah membaca
-                  </p>
-                </div>
-                <div class="col-lg-9">
-                  <img src="./img/pablita-596.png" alt="" class="img-fluid" />
+          <!-- komentar -->
+          <div class="bg-linear" id="detail" style="margin-top: 20em;">
+            <h3 class="text-center" >Pendapat & Komentar</h3>
+            <div class="container" style="margin-top: 2em;">  
+                <div class="col-lg-10 offset-lg-1">
+                  <img src="./img/komentarterbaik.png" alt="" class="img-fluid gambar__komen mx-auto d-block">
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- -->
+          <div class="container" style="margin-top: 10em;">
+              <div class="col-lg-10 offset-lg-1">
+                <img src="./img/perkenalan.png" alt="" class="img-fluid">
+              </div>
+          </div>
+
           <!-- Shelves -->
-          <div class="container" id="shelves" style="margin-top: 10em">
-            <h3 class="text-center mb-5">Rak Buku</h3>
+          <div class="container" id="shelves" style="margin-top: 15em">
+            <img src="./img/welcome.png" class="img-fluid gambar__rakBuku mx-auto d-block" alt="">
+            <h3 class="text-center">Rak Buku</h3>
             <p class="text-center">Buku Pemrograman Python</p>
             <div class="row thumb">
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Implementasi Algoritma dalam bahasa Python
@@ -283,7 +296,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Dasar Pemrograman dengan Python
@@ -317,7 +330,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 style="font-size: 15px" class="card-title text-center">
                       Buku Tips & Trik Program database menggunakan Python
@@ -354,7 +367,7 @@
             <p class="text-center mt-5">Buku Pemrograman PHP</p>
             <div class="row thumb">
               <div class="col-lg-6">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 20px">
                       Buku Koleksi Pemrograman WEB dengan PHP
@@ -383,7 +396,7 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 20px">
                       Buku Pemrograman WEB dengan PHP VERSI 7
@@ -419,7 +432,7 @@
             <p class="text-center mt-5">Buku Pemrograman JAVA</p>
             <div class="row thumb">
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Logika Pemrograman menggunakan JAVA
@@ -450,7 +463,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku JAVA Untuk Kriptografy
@@ -484,7 +497,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Algoritma menggunakan JAVA
@@ -516,7 +529,7 @@
             <p class="text-center mt-5">Buku Pemrograman Lain-lain</p>
             <div class="row thumb">
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Dasar HTML,CSS & JavaScript
@@ -549,7 +562,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Algoritma Pemrograman & Strukture data menggunakan
@@ -581,7 +594,7 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Algoritma & Pemrograman menggunakan Pascal dan C
@@ -618,7 +631,7 @@
             </p>
             <div class="row thumb">
               <div class="col-lg-6">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku pengenalan Machine Learning dengan Python
@@ -651,7 +664,7 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="card bg-transparent">
+                <div class="card bg-transparent shadow">
                   <div class="card-body">
                     <h3 class="card-title text-center" style="font-size: 15px">
                       Buku Pengantar Machine Learning menggunakan Python & Rust
@@ -684,11 +697,17 @@
               </div>
             </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <img src="./img/kembalilagi.png" alt="" class="img-fluid gambar__cuitan mx-auto d-block">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
-    <div class="circle1"></div>
+<!-- CIRCLE DAN GAMBAR GANTUNG -->
     <img src="./img/clip-12.png" class="img-gantung img-fluid" alt="" />
     <img
       src="./img/clip-distance-education.png"
@@ -696,7 +715,6 @@
       alt=""
     />
     <img src="./img/clip-139.png" alt="" class="img-fluid gambar__bawah" />
-    <div class="circle3"></div>
     <div class="circle4"></div>
     <div class="circle5"></div>
     <div class="circle6"></div>
@@ -713,10 +731,20 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/jquery.poptrox.min.js"></script>
     <script src="./js/owl-carousel.js"></script>
-    <script src="./js/scrollreveal.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/loader.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      AOS.init({
+      easing: "ease-out-back",
+      duration: 1000,
+  });
+      jQuery(window).on("load", function () {
+      $(".css-loader").fadeOut("slow");
+});
+    </script>
   </body>
 </html>
