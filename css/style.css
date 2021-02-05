@@ -276,8 +276,77 @@ body.is-covered #wrapper {
   top: 0;
   width: 160px;
 }
+.slide {
+  animation: deddy 1s ease-in-out 2 alternate;
+}
+.text__footer h3 {
+  font-size: 20px;
+}
+.text__footer p {
+  font-size: 15px;
+}
+@keyframes deddy {
+  from {
+    opacity: 0;
+    transform: translate(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(100px);
+  }
+}
+footer {
+  border-radius: 50px;
+  margin-top: 15em;
+  background: linear-gradient(
+    to top left,
+    rgba(0, 175, 245, 0.3),
+    rgb(253, 253, 253)
+  );
+  width: 100%;
+}
+.lingkaran {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 13rem;
+  width: 13rem;
+  padding: 20px;
+  position: absolute;
+  top: -84px;
+  left: -8%;
+  border-radius: 50%;
+}
+
 /* responsive */
 @media (max-width: 576px) {
+  .lingkaran {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 192px;
+    left: 82px;
+    border-radius: 20%;
+  }
+  .lingkaran p {
+    margin-top: -18px !important;
+    font-size: 10px !important;
+  }
+  .gambar__cuitan {
+    width: 150px;
+  }
+  .konta h3 {
+    font-size: 13px;
+  }
   .image__komen {
     width: 300px;
     position: absolute;
@@ -455,6 +524,12 @@ body.is-covered #wrapper {
 } */
 /* 576px 768px  992px 1200px 1400px */
 @media (min-width: 1200px) {
+  .gambar__efek {
+    width: 600px;
+  }
+  .gambar__layanan {
+    margin-left: 276px;
+  }
   .layanan__pertama .card .card-body h5 {
     font-size: 17px;
   }

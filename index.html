@@ -22,9 +22,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/loader/loaders.css">
+    <link rel="stylesheet" href="./css/vue.css">
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
     <div class="css-loader">
@@ -64,6 +66,7 @@
                 <a href="#info"  class="nav-link menu-item">Informasi</a>
                 <a href="#service" class="nav-link menu-item">Layanan</a>
                 <a href="#shelves" class="nav-link menu-item">Rak</a>
+                <a href="#pesan" class="nav-link menu-item">Pesan Buku</a>
                 <a href="#contact" class="nav-link menu-item">Contact</a>
               </div>
             </div>
@@ -73,34 +76,32 @@
         <div class="containe" id="home">
           <div class="container__heading">
             <div class="quote">
-              <h3 class="text-center" data-aos="fade-up"
-              data-aos-delay="600"
+              <h3 class="text-center ini" 
               >Baca Buku Untuk</h3>
-              <p class="text-center" data-aos="fade-right" data-aos-delay="700" >Meningkatkan SKILL Coding mu</p>
+              <p class="text-center danini">Meningkatkan SKILL Coding mu</p>
               <div class="row__button">
-                <button class="button shadow" data-aos="zoom-in" data-aos-delay="800">
-                  <a
-                    href="#overview"
-                    style="text-decoration: none"
-                    class="menu-item"
-                    >Overview</a
-                  >
-                </button>
-                <button class="button2 shadow-sm"  data-aos="zoom-out" data-aos-delay="800">
+                <button class="button shadow">
                   <a
                     href="#info"
                     style="text-decoration: none"
                     class="menu-item"
-                    >Info Detail</a
+                    >Info Menarik</a
+                  >
+                </button>
+                <button class="button2 shadow-sm">
+                  <a
+                    href="#overview"
+                    style="text-decoration: none"
+                    class="menu-item"
+                    >Detail</a
                   >
                 </button>
               </div>
-              <div class="tangan" data-aos="zoom-out-up"data-aos-delay="800" data-aos-duration="1000">
+              <div class="tangan">
                 <img src="./img/flame-97.png" class="img-fluid"  alt="" />
               </div>
             </div>
             <img
-            data-aos="zoom-out" data-aos-delay="900"
               class="image__heading img-fluid mx-auto d-block gambar__awal"
               src="./img/my-bgg.png"
               alt=""
@@ -188,7 +189,8 @@
           <!-- Service-->
           <div class="container" style="margin-top: 15em" id="service">
             <h3 class="text-center">Layanan Kami</h3>
-            <div class="row mt-5">
+            <img src="./img/mirage-sign-in.png" class="img-fluid gambar__layanan" style="width: 200px;" alt="">
+            <div class="row">
               <div class="col-lg-4 col-sm-12 layanan__pertama">
                 <div class="card bg-transparent shadow-sm">
                   <div class="card-body">
@@ -239,6 +241,7 @@
                 </div>
               </div>
             </div>
+       
           </div>
           <!-- komentar -->
           <div class="bg-linear" id="detail" style="margin-top: 20em;">
@@ -697,13 +700,134 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <!-- efek pertama tidak baca buku -->
+          <div class="container" style="margin-top: 25em;">
+            <div class="row">
+              <div class="col-lg-7">
+                <img src="./img/mirage-no-comments.png" alt="" class="img-fluid gambar__efek mx-auto d-block">
+              </div>
+              <div class="col-lg-5">
+                <h3  class="text-center">Kamu Tau ga??? </h3>
+                <p class="text-center mt-3" style="font-size: 15px;">apa efek buat kamu... <br>yg tidak membaca <strong>BUKU Coding Fundamental</strong> dari CodingBook saat ngoding<br> <strong>yuksss Scroolll</strong> </p>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- efek tidak baca buku -->
+              <div class="container" style="margin-top: 15em;">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <img src="./img/eastwood-design.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="lingkaran">
+                      <p  style="font-size: 13px; margin-top: 40px;" class="text-center">Efeknya ada ketika codingan mulai error, error proggram itu banyak. terlebih erorr yg paling membingungkan ialah logika yg kurang tepat saat ngoding. <br> jadi yg dirasakan ialah malas & jadi beban </p> 
+                    </div>  
+                  </div>
+                  <div class="col-lg-5">
+                    <img src="./img/eastwood-come-back-later.png" class="img-fluid"  alt="">
+                  </div>
+
+                </div>
+              </div>
+          <!-- terakhir -->
+          <div class="container" style="margin-top: 17em;">
             <div class="row">
               <div class="col-lg-12">
                 <img src="./img/kembalilagi.png" alt="" class="img-fluid gambar__cuitan mx-auto d-block">
               </div>
             </div>
           </div>
+<!-- form inputan -->
+          <div class="container konta" style="margin-top: 5em;" id="counter">
+            <h3 class="text-center">Anda ingin membeli buku? <br> isi form dibawah jika ingin menghindari efek diatas</h3>
+            <div id="pesan" class="row">
+              <div class="col-lg-6">
+                <form class="form" @submit.prevent="submiit">
+                  <label>Nama Kamu</label>
+                  <input type="text" v-model="nama" />
+                  <label>Tertarik Membeli Buku</label>
+                  <select v-model="role">
+                    <option value="Tertarik">Tertarik</option>
+                    <option value="Tidak Tertarik">Tidak Tertarik</option>
+                  </select>
+              <label for="">No HP/WhatsApp</label>
+              <input type="text" v-model="telp">
+                  <label for=""
+                    >masukkan JUDUL buku yg ingin anda sarankan. Pisahkan dengan tanda
+                    koma</label
+                  >
+                  <input type="text" v-model="tempatPenampungan" @keyup="tekankeyboard" />
+              
+                  <div class="data">
+                    <p :key="jeniss" v-for="jeniss in jenis" class="pill">
+                      {{ jeniss }}
+                    </p>
+                  </div>
+                  <div class="tombol">
+                    <button class="btn btn-info">Kirim Masukan Ke ADMIN</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6"  v-if="isSubmitted">
+                <p class="text-center mt-5">Terimakasih sudah mengisi form</p>
+                <div class="kontainer">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" style="font-size: 13px;">Nama Kamu</th>
+                      <th scope="col" style="font-size: 13px;">Tertarik ?</th>
+                      <th scope="col" style="font-size: 13px;">No HP</th>
+                      <th scope="col" style="font-size: 13px;">Buku yg disarankan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="font-size: 13px;" class="font-italic">{{nama}}</th>
+                      <td style="font-size: 13px;" class="font-italic">{{role}}</td>
+                      <td style="font-size: 13px;" class="font-italic">{{telp}}</td>
+                      <td>
+                        <ul class="list-group list-group-flush" :key="jeniss" v-for="jeniss in jenis">
+                          <li class="list-group-item" style="font-size: 10px;" >{{jeniss}}</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <footer id="contact">
+            <div class="container">
+                <p class="mb-5 mt-5" >Hubungi kami lebih lanjut</p>
+              <div class="row justify-content-center">
+                <div class="col-lg-4 text__footer" >
+                  <h3>Contact</h3>
+                    <p>Email</p>
+                    <p>WhatsApp</p>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                </div>
+                <div class="col-lg-4 text__footer">
+                  <h3>Product</h3>
+                    <p>Buku Coding</p>
+                    <p>Pengajar CodingBook</p>
+                    <p>Blog CodingBook</p>
+                    <p>Tentang Coding Book</p>
+                </div>
+                
+                <div class="col-lg-4 text__footer">
+                  <h3>Alamat</h3>
+                  <p>Jalan Binjai km 10,8 simpang pardede medan </p>
+                  <p><strong>code pos 20351</strong></p>
+                </div>
+              </div>
+                <p class="text-center" style="font-size: 15px; color: gray; margin-top: 10em;">All right Reserved 2021 @CodingBook</p>
+              </div>
+          </footer>
         </div>
       </section>
     </main>
@@ -731,19 +855,47 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/jquery.poptrox.min.js"></script>
     <script src="./js/owl-carousel.js"></script>
     <script src="./js/loader.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/main.js"></script>
     <script>
-      AOS.init({
-      easing: "ease-out-back",
-      duration: 1000,
-  });
+      const Counter = {
+  data() {
+    return {
+      nama: "",
+      role: "Tertarik",
+      telp:"",
+      tempatPenampungan: "",
+      jenis: [],
+      isSubmitted: false,
+    };
+  },
+  methods: {
+    tekankeyboard(e) {
+      if (e.key === "," && this.tempatPenampungan) {
+        if (!this.jenis.includes(this.tempatPenampungan)) {
+          this.jenis.push(this.tempatPenampungan);
+        }
+        this.tempatPenampungan = "";
+      }
+    },
+    submiit() {
+      this.isSubmitted = true;
+    },
+  },
+}
+    Vue.createApp(Counter).mount('#counter')
+    </script>
+    <script>
+ 
       jQuery(window).on("load", function () {
       $(".css-loader").fadeOut("slow");
+      $(".ini").addClass("slide")
+      $(".danini").addClass("slide")
+      $(".image__heading").addClass("slide")
 });
     </script>
   </body>
