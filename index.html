@@ -34,7 +34,7 @@
         class="loader-inner line-scale d-flex align-items-center justify-content-center"
       ></div>
     </div>
-    <main id="wrapper">
+    <div class="main" id="wrapper">
       <section class="glass" id="glasses">
         <nav
           id="navbartrig"
@@ -64,11 +64,12 @@
               <div class="navbar-nav ml-auto nav__tulis">
                 <a href="#home" class="nav-link menu-item">Beranda</a>
                 <a href="#info"  class="nav-link menu-item">Informasi</a>
-                <a href="#service" class="nav-link menu-item">Layanan</a>
-                <a href="#shelves" class="nav-link menu-item">Rak</a>
+                <a href="#service" class="nav-link menu-item">Fitur</a>
+                <a href="#rak" class="nav-link menu-item">Rak</a>
                 <a href="#pesan" class="nav-link menu-item">Pesan Buku</a>
                 <a href="#contact" class="nav-link menu-item">Contact</a>
-              </div>
+                <a class="btn btn-info mode" id="baca">Mode Baca</a>
+              </div>             
             </div>
           </div>
         </nav>
@@ -77,15 +78,15 @@
           <div class="container__heading">
             <div class="quote">
               <h3 class="text-center ini" 
-              >Baca Buku Untuk</h3>
-              <p class="text-center danini">Meningkatkan SKILL Coding mu</p>
+              >Halooo, Coders </h3>
+              <p class="text-center danini">yuk baca buku untuk tingkatkan Dasar-dasar Coding mu</p>
               <div class="row__button">
                 <button class="button shadow">
                   <a
                     href="#info"
                     style="text-decoration: none"
                     class="menu-item"
-                    >Info Menarik</a
+                    >Info Menarik Nih</a
                   >
                 </button>
                 <button class="button2 shadow-sm">
@@ -98,8 +99,9 @@
                 </button>
               </div>
               <div class="tangan">
-                <img src="./img/flame-97.png" class="img-fluid"  alt="" />
+                <img src="./img/flame-97.png"   class="img-fluid tangan-saya"  alt="" />
               </div>
+            
             </div>
             <img
               class="image__heading img-fluid mx-auto d-block gambar__awal"
@@ -111,7 +113,7 @@
           <!-- Informasi -->
           <div class="container__main" >
             <div class="container"id="info">
-              <h3 class="text-center mb-5">Informasi menarik</h3>
+              <h3 class="text-center mb-5" >Informasi menarik</h3>
               <div class="row">
                 <div class="col-lg-8 ">
                   <div class="gambar__main">
@@ -123,9 +125,9 @@
                   </div>
                 </div>
                 <div class="col-lg-4 text-center text-me align-self-center">
-                  <h3 class="font-weight-bold">Info Nih !</h3>
-                  <p class="mt-3">
-                    Website ini menawarkan beberapa buku buku fundamental coding
+                  <h3 class="font-weight-bold" >Info Nih !</h3>
+                  <p class="mt-3" >
+                    Website ini menawarkan beberapa buku dasar-dasar & fundamental coding
                     untuk dibaca sebelum membuat code proggram. <br> SEPERTI APA ???
                     <br />
                     <br />
@@ -139,31 +141,34 @@
           <!-- Our Us -->
           <div class="our" id="overview">
             <div class="container" style="margin-top: 15em">
-              <h3 class="text-center">Sudah Tau Belum ???</h3>
+              <h3 class="text-center" >Sudah Tau Belum ???</h3>
               <div class="row">
                 <div class="col-lg-4 over align-self-center">
                   <div class="kolom__text mt-3">
-                    <h3 class="text-center" style="font-size: 20px !important">
-                      Anda Harus Tau!
+                    <h3 class="text-center" style="font-size: 20px !important" >
+                      Coders Harus Tau!
                     </h3>
-                    <p class="text-center" style="font-size: 15px !important">
+                    <p class="text-center"  style="font-size: 15px !important">
                       Kamu proggrammer tapi malas baca buku, kamu bukan lah
                       proggrammer yg baik. proggrammer yg baik harus mampu dan
-                      tahan membaca buku & dokumentasi.
+                      tahan membaca buku atau dokumentasi.
                     </p>
-                 
-                      <div class="btn">
-                        <button class="button shadow">
+                      <div class="btnn">
+                        <button class=" shadow">
                           <a
                             href="#detail"
-                            style="text-decoration: none"
+                            style="text-decoration: none;"
                             class="menu-item"
-                            >Lihat beberapa komentar</a
+                            >Lihat komentar</a
                           >
+                        </button>
+                        <button>
+                          <a href="#service" 
+                        style="text-decoration: none;">Fitur Kami</a>
                         </button>
                       </div>  
                       <div class="tangan_kedua">
-                        <img src="./img/flame-97.png" class="img-fluid" alt="" />
+                        <img src="./img/flame-97.png" class="img-fluid tangan-saya" alt="" />
                       </div>
              
                   </div>
@@ -187,65 +192,96 @@
           </div>
 
           <!-- Service-->
-          <div class="container" style="margin-top: 15em" id="service">
-            <h3 class="text-center">Layanan Kami</h3>
-            <img src="./img/mirage-sign-in.png" class="img-fluid gambar__layanan" style="width: 200px;" alt="">
+          <div class="container" style="margin-top: 25em">
             <div class="row">
-              <div class="col-lg-4 col-sm-12 layanan__pertama">
-                <div class="card bg-transparent shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Sumber Buku</h5>
+              <div class="col-lg-12">
+                <div class="square__photo"></div>
+                <img src="./img/books.jpg" alt="" class="img-fluid img-thumbnail bg__cover">
+                <div class="contex">
+                  <h3>Kenapa cari buku di CodingBook ?</h3>
+                  <p >Karena kami menawarkan beberapa fitur untuk kalian, <br> sehingga kalian tidak akan salah pilih <br> sudah memilih produk kami</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" style="margin-top: 7em;"  id="service">
+            <div class="row justify-content-center">
+              <div class="col-md-4 layanan__pertama"
+              
+              >
+                <div class="card bg-transparent">
+                  <div class="card-body shadow">
+                    <h5 class="card-title text-center " >Sumber Buku</h5>
                     <img
                       src="./img/icons8-book-reading-96.png"
                       style="width: 100px"
-                      class="img-fluid rounded mx-auto d-block"
+                      class="img-fluid rounded mx-auto d-block "
                       alt=""
                     />
-                    <p class="card-text text-center">
+                    <p  class="card-text text-center tulisan__p" >
                       Buku yg kami berikan adalah buku asli dari penulis, tidak hasil copy paste atau ambil dari karangan buku lain
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12 layanan__pertama">
-                <div class="card bg-transparent shadow-sm">
+              <div class="col-md-4 col-sm-12 layanan__pertama">
+                <div class="card bg-transparent">
                   <div class="card-body">
-                    <h5 class="card-title text-center">
+                    <h5 class="card-title text-center" >
                       Uang Anda Kembali
                     </h5>
                     <img
                       src="./img/Pig.png"
                       style="width: 100px"
-                      class="img-fluid rounded mx-auto d-block"
+                      class="img-fluid rounded mx-auto d-block "
                       alt=""
                     />
-                    <p class="card-text text-center">
+                    <p  class="card-text text-center tulisan__p">
                       Uang anda kembali jika buku tidak ditulis dari penulis/pengarang asal
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12 layanan__pertama">
-                <div class="card bg-transparent shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Harga Tetap</h5>
-                    <img
-                      src="./img/icons8-check-dollar-96.png"
-                      class="img-fluid rounded mx-auto d-block"
-                      alt=""
-                    />
-                    <p class="card-text text-center">
-                      harga buku tetap dan tidak pernah berubah, jadi kapan pun harga buku dijamin tidak berubah
-                    </p>
-                  </div>
-                </div>
+             
+            </div>
+       <div class="row mt-5 justify-content-center">
+          <div class="col-md-4">
+            <div class="card bg-transparent">
+              <div class="card-body">
+                <h5 class="card-title text-center" >Buku Terbaru</h5>
+                <img
+                  src="./img/booksme.png"
+                  style="width: 100px"
+                  class="img-fluid rounded mx-auto d-block "
+                  alt=""
+                />
+                <p  class="card-text text-center tulisan__p">
+                  Buku yg kami berikan adalah buku pemrograman ter-baru, tidak buku Pemrograman yg lama. buku selalu update mengikuti perkembangan dunia teknologi
+                </p>
               </div>
             </div>
-       
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-transparent shadow">
+              <div class="card-body">
+                <h5 class="card-title text-center" >Harga Tetap</h5>
+                <img
+                  src="./img/icons8-check-dollar-96.png"
+                  style="width: 100px"
+                  class="img-fluid rounded mx-auto d-block "
+                  alt=""
+                />
+                <p  class="card-text text-center tulisan__p">
+                  harga buku tetap dan selalu mengikuti harga pasar global, jadi misalnya anda masih berpikir untuk membeli.kapan pun harga buku dijamin tidak berubah
+                </p>
+              </div>
+            </div>
+          </div>
+       </div>
           </div>
           <!-- komentar -->
           <div class="bg-linear" id="detail" style="margin-top: 20em;">
-            <h3 class="text-center" >Pendapat & Komentar</h3>
+            <h3 class="text-center"  >Pendapat & Komentar</h3>
             <div class="container" style="margin-top: 2em;">  
                 <div class="col-lg-10 offset-lg-1">
                   <img src="./img/komentarterbaik.png" alt="" class="img-fluid gambar__komen mx-auto d-block">
@@ -259,13 +295,14 @@
               <div class="col-lg-10 offset-lg-1">
                 <img src="./img/perkenalan.png" alt="" class="img-fluid">
               </div>
+            
           </div>
 
           <!-- Shelves -->
-          <div class="container" id="shelves" style="margin-top: 15em">
+          <div class="container" id="rak" style="margin-top: 15em">
             <img src="./img/welcome.png" class="img-fluid gambar__rakBuku mx-auto d-block" alt="">
-            <h3 class="text-center">Rak Buku</h3>
-            <p class="text-center">Buku Pemrograman Python</p>
+            <h3 class="text-center" >Rak Buku</h3>
+            <p class="text-center" >Buku Fundamental & Pemrograman dengan Python</p>
             <div class="row thumb">
               <div class="col-lg-4">
                 <div class="card bg-transparent shadow">
@@ -290,6 +327,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 13px"
+                      
                     >
                       Perkuat Algoritma mu dengan Belajar fundamental Python,
                       Algoritma dan strukture data. dilengkapi dengan studi
@@ -321,6 +359,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 13px"
+                      
                     >
                       Kamu baru kenal bahasa pemrograman Python? atau kamu baru
                       ingin memulai dengan menggunakan bahasa Python? selamat
@@ -345,7 +384,6 @@
                         alt=""
                       />
                     </a>
-
                     <div class="star mt-4">
                       <img src="./img/star.png" alt="" width="30" />
                       <img src="./img/star.png" alt="" width="30" />
@@ -356,6 +394,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 13px"
+                      
                     >
                       Kamu sudah biasa dengan Python dan mau lebih update lagi,
                       Python sekarang lebih dipakai dalam kasus data/bigdata.
@@ -367,7 +406,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-center mt-5">Buku Pemrograman PHP</p>
+            <p class="text-center mt-5">Buku Fundamental & Pemrograman dengan PHP</p>
             <div class="row thumb">
               <div class="col-lg-6">
                 <div class="card bg-transparent shadow">
@@ -389,6 +428,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 15px"
+                      
                     >
                       Buku koleksi Pemrograman PHP memberikan source code free
                       untuk pembaca source code untuk membuat aplikasi berbasis
@@ -421,6 +461,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 15px"
+                      
                     >
                       Anda sering buat aplikasi web dengan php? cobain nih Buku
                       Pemrograman PHP7,buku ini memberikan fasilitas yg banyak
@@ -432,7 +473,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-center mt-5">Buku Pemrograman JAVA</p>
+            <p class="text-center mt-5">Buku Fundamental & Pemrograman dengan JAVA</p>
             <div class="row thumb">
               <div class="col-lg-4">
                 <div class="card bg-transparent shadow">
@@ -457,6 +498,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 15px"
+                      
                     >
                       Buku Pemrograman dengan JAVA memberikan teori,Logika dan
                       dasar pemrograman JAVA dan praktek langsung menggunakan
@@ -488,6 +530,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 15px"
+                      
                     >
                       ingin menambahkan keamanan dalam aplikasi yg kamu bangun?
                       dan bingung gimana cara menambahkam keamaan aplikasi?
@@ -519,6 +562,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 15px"
+                      
                     >
                       ngoding dan buat app menggunakan JAVA tapi belom tau
                       Algoritma dan strukture data ? tenang Buku Algoritma &
@@ -529,7 +573,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-center mt-5">Buku Pemrograman Lain-lain</p>
+            <p class="text-center mt-5">Buku Fundamental & Pemrograman Lain-lain</p>
             <div class="row thumb">
               <div class="col-lg-4">
                 <div class="card bg-transparent shadow">
@@ -554,6 +598,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 13px"
+                      
                     >
                       Kamu lagi design web menggunakan HTML,CSS dan bantuan
                       JavaScript untuk membuat web mu jadi interaktif? buku ini
@@ -588,6 +633,7 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 12px"
+                      
                     >
                       Anda proggrammer C++, kami menyarankan anda memiliki buku
                       ini karena didalam buku ini terdapat teori dasar
@@ -619,81 +665,12 @@
                     <p
                       class="card-text text-center mt-2"
                       style="font-size: 13px"
+                      
                     >
                       Anda proggrammer tapi masih kendala di fundamental?
                       jadikan buku ini teman ngoding mu dengan bahasa
                       pemrograman C dan pascal dilengkapi dengan
                       teori,fundamental bahasa c dan pascal serta studi kasus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="text-center mt-5">
-              Buku Pemrograman Machine Learning Dengan Python
-            </p>
-            <div class="row thumb">
-              <div class="col-lg-6">
-                <div class="card bg-transparent shadow">
-                  <div class="card-body">
-                    <h3 class="card-title text-center" style="font-size: 15px">
-                      Buku pengenalan Machine Learning dengan Python
-                    </h3>
-                    <a href="img/IMG20210124154048.jpg">
-                      <img
-                        src="./img/buku/IMG20210124154048.jpg"
-                        class="img-fluid rounded mx-auto d-block gamba"
-                        alt=""
-                      />
-                    </a>
-                    <div class="star mt-4">
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/rating.png" alt="" width="30" />
-                    </div>
-                    <p
-                      class="card-text text-center mt-2"
-                      style="font-size: 13px"
-                    >
-                      anda baru belajar machine Learning? atau sudah pernah
-                      membuat project machine Learning, kami sangat menyarankan
-                      untuk anda memiliki buku ini karena buku ini dilengkapi
-                      dengan dasar dan pengenalan machine Learning menggunakan
-                      Python
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card bg-transparent shadow">
-                  <div class="card-body">
-                    <h3 class="card-title text-center" style="font-size: 15px">
-                      Buku Pengantar Machine Learning menggunakan Python & Rust
-                    </h3>
-                    <a href="img/IMG20210124153914.jpg">
-                      <img
-                        src="./img/buku/IMG20210124153914.jpg"
-                        class="img-fluid rounded mx-auto gamba d-block"
-                        alt=""
-                      />
-                    </a>
-                    <div class="star mt-4">
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                      <img src="./img/star.png" alt="" width="30" />
-                    </div>
-                    <p
-                      class="card-text text-center mt-2"
-                      style="font-size: 13px"
-                    >
-                      Machine Learning merupakan bagian dari artificial
-                      inteligence/AI, buku ini menyajikan beberapa teori dan
-                      pengantar penting untuk belajar machine Learning dengan
-                      bahasa pemrograman Rust dan Python
                     </p>
                   </div>
                 </div>
@@ -707,8 +684,8 @@
                 <img src="./img/mirage-no-comments.png" alt="" class="img-fluid gambar__efek mx-auto d-block">
               </div>
               <div class="col-lg-5">
-                <h3  class="text-center">Kamu Tau ga??? </h3>
-                <p class="text-center mt-3" style="font-size: 15px;">apa efek buat kamu... <br>yg tidak membaca <strong>BUKU Coding Fundamental</strong> dari CodingBook saat ngoding<br> <strong>yuksss Scroolll</strong> </p>
+                <h3  class="text-center" >Kamu Tau ga??? </h3>
+                <p class="text-center mt-3"  style="font-size: 15px;">apa efek buat kamu... <br>yg tidak membaca <strong>BUKU Coding DASAR & FUNDAMENTAL</strong> dari CodingBook saat ngoding<br> <strong>yuksss Scroolll</strong> </p>
               </div>
             </div>
           </div>
@@ -721,7 +698,7 @@
                   </div>
                   <div class="col-lg-2">
                     <div class="lingkaran">
-                      <p  style="font-size: 13px; margin-top: 40px;" class="text-center">Efeknya ada ketika codingan mulai error, error proggram itu banyak. terlebih erorr yg paling membingungkan ialah logika yg kurang tepat saat ngoding. <br> jadi yg dirasakan ialah malas & jadi beban </p> 
+                      <h5 style="font-size: 15px; margin-top: 40px; color: #658ec6;" class="text-center">Efeknya ada ketika codingan mulai error, error proggram itu banyak. terlebih erorr yg paling membingungkan ialah logika yg kurang tepat & dasar-dasarnya belom kuat. <br> jadi yg dirasakan ialah malas & jadi beban </h5> 
                     </div>  
                   </div>
                   <div class="col-lg-5">
@@ -731,16 +708,11 @@
                 </div>
               </div>
           <!-- terakhir -->
-          <div class="container" style="margin-top: 17em;">
-            <div class="row">
-              <div class="col-lg-12">
-                <img src="./img/kembalilagi.png" alt="" class="img-fluid gambar__cuitan mx-auto d-block">
-              </div>
-            </div>
-          </div>
+       
 <!-- form inputan -->
-          <div class="container konta" style="margin-top: 5em;" id="counter">
-            <h3 class="text-center">Anda ingin membeli buku? <br> isi form dibawah jika ingin menghindari efek diatas</h3>
+          <div class="container konta" style="margin-top: 15em;" id="counter">
+            <h3 class="text-center" >Sooooo, Anda ingin membeli buku?</h3>
+            <p class="text-center">Mari isi form dibawah ini...</p>
             <div id="pesan" class="row">
               <div class="col-lg-6">
                 <form class="form" @submit.prevent="submiit">
@@ -770,7 +742,7 @@
                 </form>
               </div>
               <div class="col-lg-6"  v-if="isSubmitted">
-                <p class="text-center mt-5">Terimakasih sudah mengisi form</p>
+                <p class="text-center mt-5 " style="color: white !important;">Terimakasih sudah mengisi form</p>
                 <div class="kontainer">
                 <table class="table">
                   <thead>
@@ -806,10 +778,10 @@
               <div class="row justify-content-center">
                 <div class="col-lg-4 text__footer" >
                   <h3>Contact</h3>
-                    <p>Email</p>
-                    <p>WhatsApp</p>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
+                    <p>Email Address <span style="font-style: italic; font-size: 10px;">(haicoders12@gmail.com)</span></p>
+                    <a style="text-decoration: none;" target="_blank" href="https://api.whatsapp.com/send?phone=6285270826602"><p>WhatsApp</p></a>
+                  <a style="text-decoration: none;"  target="_blank" href="https://web.facebook.com/deddysihombingcomunity/"><p>Facebook</p></a>
+                <a style="text-decoration: none;"  target="_blank"  href="https://www.instagram.com/deedyysihombing/"><p>Instagram</p></a>  
                 </div>
                 <div class="col-lg-4 text__footer">
                   <h3>Product</h3>
@@ -830,7 +802,7 @@
           </footer>
         </div>
       </section>
-    </main>
+    </div>
 <!-- CIRCLE DAN GAMBAR GANTUNG -->
     <img src="./img/clip-12.png" class="img-gantung img-fluid" alt="" />
     <img
@@ -890,7 +862,6 @@
     Vue.createApp(Counter).mount('#counter')
     </script>
     <script>
- 
       jQuery(window).on("load", function () {
       $(".css-loader").fadeOut("slow");
       $(".ini").addClass("slide")
@@ -898,5 +869,6 @@
       $(".image__heading").addClass("slide")
 });
     </script>
+   
   </body>
 </html>

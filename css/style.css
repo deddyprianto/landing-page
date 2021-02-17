@@ -20,6 +20,7 @@ h3 {
   color: #426696;
   font-weight: 600;
   opacity: 0.8;
+  font-family: "Dosis", sans-serif;
 }
 
 h4 {
@@ -28,12 +29,20 @@ h4 {
   opacity: 0.8;
   font-family: "Open Sans", sans-serif;
 }
-
+h5 {
+  font-family: "Dosis", sans-serif;
+}
+.text__white {
+  color: white;
+}
 .navbar__background {
   background-color: #fff !important;
   transition: 1s;
 }
-main {
+.tulisan__p {
+  font-size: 15px;
+}
+.main {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -41,7 +50,9 @@ main {
   align-items: center;
   justify-content: center;
 }
-
+.background {
+  background: rgb(21, 32, 43) !important;
+}
 .glass {
   box-shadow: 30px 40px 30px -35px rgba(0, 0, 0, 0.9);
   background: white;
@@ -78,9 +89,11 @@ main {
 .quote h3 {
   font-size: 4em;
 }
+
 .quote p {
   font-size: 25px;
 }
+
 .row__button {
   margin-top: 10px;
 }
@@ -91,11 +104,12 @@ main {
 .tangan img {
   width: 70px;
 }
+
 .tangan_kedua {
   display: flex;
   justify-content: center;
-  margin-top: -15px;
-  margin-left: 50px;
+  margin-top: -20px;
+  margin-left: 200px;
 }
 .tangan_kedua img {
   width: 70px;
@@ -320,9 +334,22 @@ footer {
   left: -8%;
   border-radius: 50%;
 }
-
+.tangan-saya {
+  animation: tangan 1.5s ease infinite;
+}
+@keyframes tangan {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* responsive */
 @media (max-width: 576px) {
+  .tangan_kedua {
+    margin-top: -30px;
+  }
   .lingkaran {
     background: white;
     background: linear-gradient(
@@ -337,8 +364,8 @@ footer {
     left: 82px;
     border-radius: 20%;
   }
-  .lingkaran p {
-    margin-top: -18px !important;
+  .lingkaran h5 {
+    margin-top: 26px !important;
     font-size: 10px !important;
   }
   .gambar__cuitan {
@@ -524,18 +551,49 @@ footer {
 } */
 /* 576px 768px  992px 1200px 1400px */
 @media (min-width: 1200px) {
+  .contex {
+    position: absolute;
+    top: 161px;
+    left: 515px;
+  }
+  .contex h3 {
+    font-size: 20px;
+  }
+  .contex p {
+    font-size: 15px;
+  }
+  .bg__cover {
+    width: 411px;
+    margin-top: 70px;
+    box-shadow: 30px 40px 30px -35px rgba(0, 0, 0, 0.9);
+  }
+  .square__photo {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 21rem;
+    width: 23rem;
+    position: absolute;
+    border-radius: 2%;
+    top: 0;
+    right: 406px;
+    z-index: -1;
+  }
+  .row__saya {
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  }
   .gambar__efek {
     width: 600px;
   }
   .gambar__layanan {
     margin-left: 276px;
   }
-  .layanan__pertama .card .card-body h5 {
-    font-size: 17px;
-  }
-  .layanan__pertama .card .card-body p {
-    font-size: 15px;
-  }
+
   .gambar__info {
     width: 500px;
   }
@@ -582,14 +640,21 @@ footer {
   .kolom__text {
     margin-left: 5em;
   }
-  .btn {
+  .btnn {
     width: 100%;
     display: flex;
   }
-  .btn button {
-    width: 100%;
-    margin-top: 10px;
+  .btnn button {
+    font-family: "Poppins", sans-serif;
+    width: 10em;
+    padding: 6px;
     font-size: 12px;
+    background: linear-gradient(to right, #65dfc9, #6cdbeb);
+    border: none;
+    border-radius: 4px;
+    margin-top: 4em;
+    cursor: pointer;
+    margin: 10px;
   }
   .view__gambar {
     display: flex;
@@ -751,6 +816,7 @@ footer {
     border-radius: 10px;
     margin-top: 4em;
     cursor: pointer;
+    margin: 10px;
   }
   .quote h3 {
     font-size: 3em;
@@ -807,17 +873,61 @@ footer {
   .nav__tulis a {
     font-size: 15px;
   }
+  .nav__tulis .mode {
+    margin-top: 6px;
+    width: 98px;
+    font-size: 11px;
+    height: 28px;
+    line-height: 13px;
+    /* animation: modee duration timing-function delay iteration-count direction fill-mode; */
+    animation: modee 1s ease-in-out 5;
+  }
+
+  @keyframes modee {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .mode__again {
+    animation: rotate 1s ease 5 !important;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .gambar__cuitan {
     width: 200px;
   }
 }
 @media (min-width: 1600px) {
-  .layanan__pertama .card .card-body h5 {
-    font-size: 25px;
+  .contex {
+    position: absolute;
+    top: 161px;
+    left: 515px;
   }
-  .layanan__pertama .card .card-body p {
-    font-size: 20px;
+  .square__photo {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 22rem;
+    width: 25rem;
+    position: absolute;
+    border-radius: 2%;
+    top: 0;
+    right: 300px;
+    z-index: -1;
   }
+
   .gambar__komen {
     width: 900px;
   }
